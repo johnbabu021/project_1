@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../css/reg_style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form action="/doctor" method="POST">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input name="fullname" type="text" placeholder="Enter your name" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of birth</span>
+                        <input type="date" required name="dob" />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="Enter your email" required name="mail" />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your number" required name="phone" />
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Place</span>
+                        <input type="text" placeholder="Enter your place" required name="place" />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Secondary Phone Number</span>
+                        <input type="text" placeholder="Enter your Number" required name="sphone" />
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Doctor category</span>
+                        <input type="text" placeholder="Enter your licence number" name="dcategory" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Doctor licence No</span>
+                        <input type="text" placeholder="Enter your licence number" name="dlnumber" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="Enter your password" name="password" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" placeholder="Confirm your password" name="cpassword" required />
+                    </div>
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1" value="male" />
+                        <input type="radio" name="gender" id="dot-2" value="female" />
+                        <input type="radio" name="gender" id="dot-3" value="other" />
+                        <span class="gender-title">Gender</span>
+                        <div class="category">
+                            <h>
+                                <label for="dot-1">
+                                    <span class="dot one"></span>
+                                    <span class="gender">Male</span>
+                                </label>
+
+                                <label for="dot-2">
+                                    <span class="dot two"></span>
+                                    <span class="gender">Female</span>
+                                </label>
+                                <label for="dot-3">
+                                    <span class="dot three"></span>
+                                    <span class="gender">Other</span>
+                                </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Register" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<section>
+
+
+    <div class="row ml-4">
+        {{#each doctor}}
+
+
+        <div class="col-lg-3 col-md-6" style="display: inline-block;">
+
+
+            <div class="card mt-5" style="width: 18rem;">
+                <img class="card-img-top" src="../images/3D2.svg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">NAME:{{this.fullname}}</h5>
+                    <p class="card-text">PHONE:{{this.phone}}</p>
+                    <a href="/hospital" class="btn btn-success">Go somewhere</a>
+                </div>
+            </div>
+
+
+        </div>
+        {{/each}}
+
+
+
+    </div>
+</section>
